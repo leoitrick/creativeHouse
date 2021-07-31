@@ -1,0 +1,57 @@
+body {
+  background: #e5e5e5;
+  color: #25282b;
+  margin: 0;
+}
+
+#container {
+  width: 90%;
+  max-width: 980px;
+  margin: 40px auto;
+
+  display: flex;
+}
+
+#intro {
+  width: 300px;
+  margin-right: 20px;
+}
+
+main {
+  margin: 32px 0;
+}
+
+button {
+  color: #ff5e84;
+  border: none;
+
+  font-weight: bold;
+  background: none;
+
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+button.fat {
+  color: white;
+  background: #ff5e84;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+
+  box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
+}
+
+button.fat:hover {
+  text-decoration: none;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  justify-content: space-evenly;
+}
