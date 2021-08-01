@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Creative House</title>
   </head>
   <body>
     <div id="container">
       <section id="intro">
-        <header><img src="logo.png" alt="Logo picture" /></header>
+        <header><img src="logo.png" alt="Main Logo picture" /></header>
         <main>
           <p>Staying home for a long period of time might not be easy.</p>
           <p>
@@ -25,15 +31,52 @@
         </main>
 
         <section id="buttons">
-          <button>+ Add Idea</button>
+          <button onclick="onOff()">+ Add Idea</button>
           <button class="fat">See Ideas</button>
         </section>
       </section>
       <section id="last-ideas">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div class="idea">
+          <img src="" alt="" />
+          <div class="content">3</div>
+        </div>
       </section>
     </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hide">
+      <div class="content">
+        <h1>New Idea</h1>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="title">Title</label> <input type="text" name="title" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="category">Category</label>
+            <input type="text" name="category" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="image">Image</label> <input type="url" name="image" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="description">Type a Description</label>
+            <textarea name="description" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="link">Link of the idea</label>
+            <input type="url" name="link" />
+          </div>
+
+          <a href="#" onclick="onOff()">Back</a>
+          <button>Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
