@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=main, initial-scale=1.0" />
+    <title>Ideas - Creative House</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body id="page-ideas">
+    <div id="container">
+      <header>
+        <a href="/"> <img src="logo.png" alt="Main Logo picture" /></a>
+      </header>
+      <nav>
+        <li><a href="/">Home</a></li>
+        <li><a class="button" href="#" onclick="onOff()">New Idea</a></li>
+      </nav>
+      <section class="title">
+        <p>showing</p>
+        <h1>Ideas</h1>
+      </section>
+      <main>
+        <section class="idea">{% include "all_ideas.html" %}</section>
+      </main>
+    </div>
+
+    {% include "modal.html" %}
+
+    <script src="/script.js"></script>
+  </body>
+</html>
