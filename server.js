@@ -1,5 +1,6 @@
 const express = require("express");
 const server = express();
+const port = process.env.PORT || 5000;
 
 const db = require("./db");
 
@@ -121,4 +122,4 @@ server.post("/", function (req, res) {
   });
 });
 // start server on port
-server.listen(2002);
+server.listen(port);
