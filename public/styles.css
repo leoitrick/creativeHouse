@@ -34,6 +34,10 @@ p,
   margin-right: 20px;
 }
 
+#last-ideas {
+  margin-top: 10%;
+}
+
 main {
   margin: 32px 0;
 }
@@ -91,12 +95,12 @@ button:hover {
 .idea img {
   width: 60px;
   height: 60px;
-
   margin-right: 32px;
 }
 
 .idea h3 {
   margin: 0;
+  align-self: start;
 }
 
 .idea p {
@@ -245,10 +249,22 @@ form button:hover {
 }
 #container main section {
   background-color: #e5e5e5;
-}
-
-#container .idea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+#container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container .title p {
+  color: #777;
+  margin-bottom: 0;
+}
+#container .title h1 {
+  margin-top: 0;
+  font-size: 32px;
 }
