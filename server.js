@@ -4,48 +4,48 @@ const port = process.env.PORT || 5000;
 
 const db = require("./db");
 
-const ideas = [
-  {
-    img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
-    title: "Coding class",
-    category: "Study",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
-    url: "http://google.com",
-  },
-  {
-    img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
-    title: "Coding class",
-    category: "Study",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
-    url: "http://google.com",
-  },
-  {
-    img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
-    title: "Coding class",
-    category: "Study",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
-    url: "http://google.com",
-  },
-  {
-    img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
-    title: "Coding class",
-    category: "Study",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
-    url: "http://google.com",
-  },
-  {
-    img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
-    title: "Coding class",
-    category: "Study",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
-    url: "http://google.com",
-  },
-];
+// const ideas = [
+//   {
+//     img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
+//     title: "Coding class",
+//     category: "Study",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
+//     url: "http://google.com",
+//   },
+//   {
+//     img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
+//     title: "Coding class",
+//     category: "Study",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
+//     url: "http://google.com",
+//   },
+//   {
+//     img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
+//     title: "Coding class",
+//     category: "Study",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
+//     url: "http://google.com",
+//   },
+//   {
+//     img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
+//     title: "Coding class",
+//     category: "Study",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
+//     url: "http://google.com",
+//   },
+//   {
+//     img: "https://image.flaticon.com/icons/png/512/4696/4696759.png",
+//     title: "Coding class",
+//     category: "Study",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus.",
+//     url: "http://google.com",
+//   },
+// ];
 
 //configuration of statics files (css, scripts, images)
 server.use(express.static("public"));
